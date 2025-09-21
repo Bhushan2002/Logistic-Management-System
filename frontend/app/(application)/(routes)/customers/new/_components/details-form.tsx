@@ -1,4 +1,5 @@
-"use client"
+"use client";
+export const dynamic = "force-dynamic";
 
 import { Customer, customerSchema } from "../../_data/schema"
 import { CustomerPersonalDetailsForm } from "./customer-personal-details-form"
@@ -15,7 +16,7 @@ import { useToast } from "@/components/ui/use-toast"
 import { ToastAction } from "@/components/ui/toast"
 
 
-export function DetailsForm(){
+export function  DetailsForm(){
 
   const [isLoading, setIsLoading] = useState<boolean>(false)
   const router = useRouter()
